@@ -1,4 +1,4 @@
 provider "okta" {
-  org_name = "dev-76063312"
+  org_name = "trial-8979392"
   base_url = "okta.com"
 }
