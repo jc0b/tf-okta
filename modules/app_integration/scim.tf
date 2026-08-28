@@ -1,8 +1,8 @@
 resource "okta_app_features" "scim_provisioning" {
   for_each = var.user_provisioning ? toset(["foo"]) : []
-  app_id = okta_app_saml.saml_integration.id
-  name   = "USER_PROVISIONING"
-  status = "ENABLED"
+  app_id   = okta_app_saml.saml_integration.id
+  name     = "USER_PROVISIONING"
+  status   = "ENABLED"
 
   capabilities {
     create {
